@@ -2,17 +2,11 @@
 @tailwind components;
 @tailwind utilities;
 
-:root { color-scheme: light; --ink: 15 23 42; }
-* { box-sizing: border-box; }
 html { scroll-behavior: smooth; }
 body {
   min-height: 100vh;
-  background: radial-gradient(circle at 5% 0%, rgba(59,130,246,.08), transparent 28rem), radial-gradient(circle at 90% 8%, rgba(99,102,241,.08), transparent 26rem), rgb(248 250 252);
-  color: rgb(var(--ink));
+  background: rgb(248 250 252);
+  color: rgb(15 23 42);
 }
-::selection { background: rgb(15 23 42); color: white; }
-::-webkit-scrollbar { width: 10px; height: 10px; }
-::-webkit-scrollbar-track { background: transparent; }
-::-webkit-scrollbar-thumb { background: rgb(203 213 225); border-radius: 999px; border: 3px solid rgb(248 250 252); }
-.dashboard-grid { background-image: linear-gradient(rgba(15,23,42,.04) 1px, transparent 1px), linear-gradient(90deg, rgba(15,23,42,.04) 1px, transparent 1px); background-size: 26px 26px; }
+
 .text-balance { text-wrap: balance; }
